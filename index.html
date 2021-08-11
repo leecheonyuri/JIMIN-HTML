@@ -3,6 +3,8 @@
 <head>
   <title>JIMN-WELCOME</title>
   <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5W6LG84JQ"></script>
 <script>
@@ -15,16 +17,66 @@
 </head>
 <body>
   <h1><a href="index.html">지민 가이드</a></h1>
-  <h3><a href="1.html">방탄소년단 지민</a></h3>
+  <!--<input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  ">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  ">-->
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body');
+if(this.value==='night'){
+  target.style.backgroundColor='black';
+  target.style.color='white';
+  this.value='day';
+
+
+  var alist=document.querySelectorAll('a');
+  var i = 0;
+  while (i<alist.length) {
+  alist[i].style.color = 'powderblue';
+  i=i+1;
+}
+
+}
+else{
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value='night';
+
+  var alist=document.querySelectorAll('a');
+  var i = 0;
+  while (i<alist.length) {
+  alist[i].style.color = 'blue';
+   i=i+1;
+  }
+
+}
+  ">
+<div id="grid">
   <ol>
     <li><a href="2.html">리드보컬</a></li>
     <li><a href="3.html">메인댄서</a></li>
     <li><a href="4.html">솔로</a></li>
   </ol>
-  <img src="jimin.jpg" width="80%">
-  <p><strong><u>지민</u></strong>(본명: 박지민, 한국 한자: 朴智旻[1], 1995년 10월 13일 ~ )은 대한민국의 보이 그룹 방탄소년단의 리드보컬, 메인댄서를 맡고 있다.</p>
-  <p>지민은 1995년 10월 13일 대한민국 부산광역시 금정구 금사동에서 태어나 성장했다. 그는 2남 중 장남으로 동생(1997년 출생)이 한 명 있다.[3] 회동초등학교와 윤산중학교를 졸업했다. 그는 학창시절에 9년 동안 임원으로 활동했을 정도로 모범생이었지만, 무용에 관심이 생겨 본래 진학하고 싶어했던 과고 대신 예고로 진학 방향을 바꿨다. 지민의 아버지는 지민이 안정적인 직업을 갖기를 원하여 처음에는 이를 반대했지만, 지민이는 예술 쪽에 재능이 있다는 담임 선생님의 말을 듣고 허락했다고 한다. 그렇게 현대무용을 전공한 그는 부산예술고등학교 무용과 역사에 없었던 전체수석으로 입학하였다.</p> <p style="margin-top:40px;">18살 때인 고등학교 2학년 시절 빅히트 엔터테인먼트 부산 공개 오디션을 통해 연습생으로 발탁되어 서울로 상경하였다. 이 당시 지민의 선생님들은 재능이 아깝다며 아이돌을 반대했었다고 한다.[6][7] 이후 서울 한국예술고등학교에 전학해 동갑인 뷔와 학교를 같이 다녔다. 2014년 2월에 졸업한 지민은 현재 글로벌사이버대학교에 재학 중이다</p>
+
+  <!--<h1><a href="index.html"><font color="red">지민 가이드</font></a></h1>
+  <h3><a href="1.html"><font color="red">방탄소년단 지민</font></a></h3>
+  <ol>
+    <li><a href="2.html"><font color="red">리드보컬</font></a></li>
+    <li><a href="3.html"><font color="red">메인댄서</font></a></li>
+    <li><a href="4.html"><font color="red">솔로</font></a></li>
+  </ol>
+-->
+  <div>
+    <p><strong><u>지민</u></strong>은 대한민국의 보이 그룹 방탄소년단의 리드보컬, 메인댄서를 맡고 있다. 1995년 10월 13일 대한민국 부산광역시 금정구 금사동에서 태어나 성장했다. 그는 2남 중 장남으로 동생(1997년 출생)이 한 명 있다. 회동초등학교와 윤산중학교를 졸업했다. 그는 학창시절에 9년 동안 임원으로 활동했을 정도로 모범생이었지만, 무용에 관심이 생겨 본래 진학하고 싶어했던 과고 대신 예고로 진학 방향을 바꿨다. 지민의 아버지는 지민이 안정적인 직업을 갖기를 원하여 처음에는 이를 반대했지만, 지민이는 예술 쪽에 재능이 있다는 담임 선생님의 말을 듣고 허락했다고 한다. 그렇게 현대무용을 전공한 그는 부산예술고등학교 무용과 역사에 없었던 전체수석으로 입학하였다.18살 때인 고등학교 2학년 시절 빅히트 엔터테인먼트 부산 공개 오디션을 통해 연습생으로 발탁되어 서울로 상경하였다. 이 당시 지민의 선생님들은 재능이 아깝다며 아이돌을 반대했었다고 한다. 이후 서울 한국예술고등학교에 전학해 동갑인 뷔와 학교를 같이 다녔다. 2014년 2월에 졸업한 지민은 현재 글로벌사이버대학교에 재학 중이다</p>
+  </div>
+</div>
 <p>
+<img src="flower_jimin.jpg" width="20%">
+
   <div id="disqus_thread"></div>
 <script>
     /**
